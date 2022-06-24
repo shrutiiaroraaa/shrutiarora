@@ -1,0 +1,321 @@
+* {
+  margin: 0%;
+  padding: 0;
+  background: #333;
+}
+
+* ::-webkit-scrollbar {
+  width: 1em;
+}
+
+* ::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: #3586ff;
+  border-radius: 100vw;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background: #608fd6;
+}
+
+body {
+  overflow-x: hidden;
+  
+}
+
+.container{
+  height: 80vh;
+}
+
+.title-about,
+.h-title,
+p {
+  color: #f9f3ee;
+}
+
+.h-title h3 {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 60px;
+  color: #f9f3ee;
+}
+
+nav {
+  height: 90px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 40%;
+  padding: 40px;
+  padding-left: 55px;
+  font-family: "Dancing Script", cursive;
+  color: #f9f3ee;
+  text-shadow: 1px 1px 2px #3586ff;
+  cursor: pointer;
+}
+
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #f9f3ee;
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+a:hover{
+    color: #608fd6;
+}
+
+.title-about {
+  padding: 20px;
+}
+
+h3 {
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.header-part {
+  display: flex;
+}
+
+.image {
+  margin-left: 4.5em;
+  margin-bottom: 2.8em;
+}
+
+.text{
+  margin-left: 17em;
+}
+
+p {
+  padding: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.para {
+  display: flex;
+  justify-content: space-between;
+}
+
+.para p {
+  /* display: block; */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  line-height: 27px;
+  font-size: 1.3em;
+}
+
+.experience h2 {
+  margin-left: 2em;
+}
+
+.timeline {
+  background: var(--primary-color);
+  margin-left: 5em;
+  margin-top: 3em;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid rgb(199, 196, 196);
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: rgb(214, 206, 206);
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title of the card */
+.title {
+  color: orangered;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid orangered;
+}
+
+.details-tech h2 {
+  margin-left: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+.tech-cards {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+
+.sqaure {
+  background-color: #c6c2c2;
+  width: 6.2em;
+  height: 6.2em;
+  border-radius: 1em;
+  margin-left: 4.5em;
+}
+
+.js {
+  align-items: center;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+/* support's styling goes here*/
+
+.support h2 {
+  color: #f9f3ee;
+  margin-top: 1.5em;
+  margin-left: 3.5em;
+  font-weight: 1500;
+  line-height: 1.2;
+  font-size: 2em;
+}
+
+.support p {
+  color: #f9f3ee;
+  font-size: 1.3em;
+  margin-left: 5.5em;
+}
+
+.support p a {
+  text-decoration: none;
+  color: #ff5403;
+}
+
+
+/* podcasts's styling */
+
+.box-pod{
+    width: 40em;
+    height: 13em;
+    background-color: #b7b3ab;
+    margin-left: 3em;
+    border-radius: 2em;
+    
+}
+
+/* footer's styling */
+footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social_icon,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+  list-style: none;
+}
+
+footer .social_icon li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+  transform: translate(-10px);
+}
+
+footer .menu li a {
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover {
+  opacity: 1;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-pic {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  z-index: 1;
+}
+
+.main-pic img {
+  display: block;
+  padding-top: 100px;
+  width: 410px;
+  margin-bottom: -250px;
+}

@@ -1,0 +1,487 @@
+*, *:before ,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/* scrollbar's styling goes here */
+
+
+* ::-webkit-scrollbar{
+    width: 1em;
+}
+
+* ::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+
+}
+
+* ::-webkit-scrollbar-thumb{
+    background: #3586ff;
+    border-radius: 100vw;
+    
+}
+
+* ::-webkit-scrollbar-thumb:hover{
+    background: #608fd6;
+}
+
+
+
+body{
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    align-items: flex-end;
+    min-height: 100px;
+    background-color: #333;
+    overflow-x: hidden;
+
+}
+
+
+
+nav{
+    height: 90px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    padding: 40px;
+    padding-left: 55px;
+    font-family: 'Dancing Script', cursive;
+    color: #F9F3EE;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px  #3586ff;
+}
+
+.menu{
+    width:60% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor:pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+}
+
+
+
+.menu a{
+    text-decoration: none;
+    color: #F9F3EE;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+
+
+.buttons{
+    flex-direction: row;
+    gap: 90px;
+    padding: 30px 20px;
+}
+
+
+.main-text h1 a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+.main-section{
+    width: 100%;
+    height: 80vh;
+    background-color: #333;
+}
+
+.main-section .option{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.option li{
+    list-style: none;
+    color: rgb(246, 242, 242);
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite  ;
+
+}
+@keyframes slide{
+    100%
+    {
+        top: -360px;
+    }
+}
+.option li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+
+}
+
+.option li span:after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid #face30;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing{
+    40%, 60%
+    {
+        left :calc(100%,30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+ 
+/* header's left text */
+
+
+
+
+
+
+.hi{
+    margin-left: 2.2em;
+    margin-top: 6em;
+    color: #F9F3EE;
+    font-size: 1.5em;
+}
+
+.wave {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;        
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}  
+
+.name{
+    margin-left: 2.2em;
+    color: #F9F3EE;
+    font-size: 1.5em;
+}
+
+.name span{
+    color: #cd921e;
+}
+
+.tyewriter{
+    margin-left: 4.7em;
+    color: #F9F3EE;
+    font-size: 1.2em;
+    margin-top: 0.7em;
+}
+
+.main-text{
+   
+    max-width: 600px;
+    margin: 0;
+    height: 20em;
+}
+
+
+
+
+
+.name-text a{
+    text-decoration: none;
+    padding: 0%;
+    margin: none;
+    height: 60px;
+    width: 30%;
+
+}
+
+a:hover{
+    color: #708bb4;
+    font-weight: 2em;
+    font-size: 20px;
+}
+
+
+.main-icons{
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+
+/* button's styling goes here */
+ .buttons{
+   
+    margin-left: 2em;
+    
+}  
+
+    
+.button{
+    display: inline-flex;
+   
+    height: 50px;
+    
+    background: #3586ff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background: #708bb4;
+}
+
+.button_text, .button_image{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    color: #fff;
+    height: 100%;
+}
+
+.button_image{
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* interested part */
+
+
+.rectangle{
+    width: 60em;
+    height: 11em;
+    background-color: #cd921e;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 28em;
+    margin-left: 30px;
+    margin-bottom: 3em;
+    margin-top:2em;
+}
+
+.rectangle h1{
+    
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    padding: 2px 20px;
+    color: #F9F3EE;
+    margin-left: 2em;
+    
+}
+
+
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    min-height: 2em;
+    min-width: 5em;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #efefe0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  
+
+/* quote's styling goes here */
+
+.quote{
+    text-align: center;
+    color: #F9F3EE;
+    font-size: 2.4em;
+    font-style: italic;
+}
+
+/* promotion box's styling goes here */
+.promotion{
+    
+    width: 60%;
+    height: 23em;
+    background-color: #5c5b5b;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem;
+    align-items: center;
+    border-radius: 45px;
+    padding: 2rem;
+    margin-bottom: 2em;
+    margin-left: 14em;
+    
+}
+
+.proj{
+    color: #fd40b1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.workshop{
+    color: #fd40b1;
+    /* margin-top: 1.5em; */
+    margin-bottom: 0.5em;
+
+}
+
+.podcast{
+    color: #fd40b1;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* footer's styling goes here */
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px  0;
+    flex-wrap: wrap;
+}
+
+
+footer .social_icon li, footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform:translate(-10px) ;
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-pic{
+    position: absolute;
+    top: 0;
+    right: 12%;
+    z-index: 1;
+
+}
+
+.main-pic img{
+    display: block;
+    padding-top: 100px;
+    width: 410px;
+    margin-bottom:-250px ;
+
+
+}

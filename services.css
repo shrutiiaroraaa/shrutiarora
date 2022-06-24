@@ -1,0 +1,230 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+
+
+/* scrollbar styling */
+
+
+* ::-webkit-scrollbar{
+    width: 1em;
+}
+
+* ::-webkit-scrollbar-track{
+    background: #333;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+
+}
+
+* ::-webkit-scrollbar-thumb{
+    background: #3586ff;
+    border-radius: 100vw;
+    
+}
+
+* ::-webkit-scrollbar-thumb:hover{
+    background: #608fd6;
+}
+
+
+
+
+body{
+    background-color: #333;
+    overflow-x: hidden;
+}
+nav{
+    height: 90px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+    padding: 40px;
+    padding-left: 55px;
+    font-family: 'Pacifico', cursive;
+    color: #F9F3EE;
+    text-shadow: 1px 1px 2px  #3586ff;
+    cursor: pointer;
+}
+
+.menu{
+    width:60% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #F9F3EE;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover{
+    color: #608fd6;
+}
+
+/* text's styling goes here */
+span h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F9F3EE;
+    text-align: center;
+    margin-top: 2em;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #F9F3EE;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* service card's styling goes here */
+
+.service-card {
+    font-family: 'Overpass', sans-serif;
+    height: auto;
+    width:90%;
+    color:rgb(18, 16, 16);
+    background-color: #6fc2c5;
+    border-radius: 12px;
+    /* margin: 20px; */
+    margin-left: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    transition: all .15s ease;
+    cursor: pointer;
+  }
+  .title{
+    padding: 15px;
+    font-size: 24px;
+    border-bottom: 2px solid #111110;
+    color:rgb(3, 3, 3);
+  }
+  .bodyin {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .service-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .row{
+    display: flex;
+  }
+  @media screen and (max-width: 900px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+      }
+  }
+
+
+
+  /* opportunity banner */
+
+.rectangle{
+    width: 69em;
+    height: 6em;
+    background-color: #dcdad6;
+    align-items: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 28em;
+    margin-left: 5.5em;
+    margin-bottom: 2.5em;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+.rectangle h3{
+    text-align: center;
+    padding-left: 3em;
+    color: #000;
+    font-weight: 550;
+}
+
+.rectangle a{
+    text-decoration: none;
+    background: #000;
+    color: #F9F3EE;
+    text-align: center;
+    margin-right: 2em;
+    border-radius: 2em;
+    padding: 2px 6px 2px 6px;
+}
+
+
+/* footer's styling goes here */
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px  0;
+    flex-wrap: wrap;
+}
+
+
+footer .social_icon li, footer .menu li{
+    list-style: none;
+}
+
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform:translate(-10px) ;
+}
+
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}

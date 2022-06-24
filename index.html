@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Arora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mochiy+Pop+One&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1><i>Shruti</i></h1>
+        </div>
+        <div class="menu">
+            <a href="index.html" class="link">Home</a>
+            <a href="about_page.html">About Me</a>
+            <a href="Service_page.html">Services</a>
+            <a href="projects_page.html">Projects</a>
+            <a href="contact_page.html">Contact Me</a>
+        </div>
+    </nav>
+     
+    <main>
+        <div class="main-section">
+            <div class="main-text">
+                <h6 class="hi">Hey<span class="wave">👋</span> </h6><br>
+                <h1 class="name">I'm <span>Shruti Arora</span></h1>
+                <h1 class="tyewriter">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ " web developer", "Public Speaker", "technical writer", "DevRel" ]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h1>
+                 <div class="buttons">
+                    <button type="button" class="button">
+                        <span class="button_text">Email Me!</span>
+                        <span class="button_image">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                        </span>
+                    </button>
+                    <button type="button" class="button">
+                        <span class="button_text">Resume</span>
+                        <span class="button_image">
+                            <ion-icon name="download-outline"></ion-icon>
+
+                        </span>
+                    </button>
+                    
+                </div> 
+                
+                
+ 
+            </div>
+            <div class="main-pic">
+                <img src="images\WhatsApp_Image_2022-06-08_at_2.19.06_PM-removebg-preview.png" alt="" width="60">
+
+            </div>
+        </div>
+  
+
+
+
+
+        <!-- quote -->
+
+        <div class="quote">
+            <h3>If you can dream it <br> you can do it</h3>
+        </div>
+
+         <!-- project+ community work -->
+         <div class="promotion">
+            <h1 class="proj"><span>  5</span><span style="color: rgb(161, 205, 178);">+</span>Completed Projects   &#128187;</h1>
+            <h1 class="workshop">10+ Workshops  👨‍💻</h1>
+            <h1 class="podcast">10+ Podcast Episodes   🎙️</h1>
+            
+        </div>
+
+        <!-- interesed box section -->
+
+        <div class="box">
+            <div class="rectangle">
+                <h1>Interested <br> Working <br> with me?</h1>
+                <div class="btn_int">
+                   
+                   
+                    <button class="button-28" role="button">Connect With me</button>
+
+                </div>
+                
+
+            </div>
+        </div>
+
+       
+
+
+
+    </main>
+
+    <!-- footer part starts from here -->
+    <footer>
+        <ul class="social_icon"> 
+            
+            <li><a href="https://twitter.com/shrutiiaroraaa"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://twitter.com/shrutiiaroraaa"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/shrutiiaroraaa/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="mailto:shrutiarora1704@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_page.html">About</a></li>
+            <li><a href="Service_page.html">Services</a></li>
+            <li><a href="projects_page.html">Projects</a></li>
+            <li><a href="contact_page.html">Contact Me</a></li>
+
+        </ul>
+        <p>@2022 |All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+    
+</body>
+</html>
