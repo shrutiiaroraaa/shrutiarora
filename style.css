@@ -79,7 +79,8 @@ nav{
     text-decoration: none;
     color: #F9F3EE;
     text-transform: capitalize;
-    font-weight: 200;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -192,7 +193,7 @@ nav{
 }
 
 .name span{
-    color: #cd921e;
+    color: #c97e0d;
 }
 
 .tyewriter{

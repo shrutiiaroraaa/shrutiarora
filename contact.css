@@ -127,6 +127,11 @@ body{
 
 }
 
+.calendly-inline-widget{
+    margin-bottom: 4.5em;
+    margin-left: 5em;
+}
+
 .one{
     display: flex;
     flex-direction: row;
@@ -184,10 +189,7 @@ body{
     margin-left: 1em;
 }
 
-.calendly-inline-widget{
-    margin-bottom: 1em;
-    margin-left: 1em;
-}
+
 
 /* footer's css */
 footer{
