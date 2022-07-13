@@ -1,7 +1,7 @@
 * {
   margin: 0%;
   padding: 0;
-  background: #333;
+  
 }
 
 * ::-webkit-scrollbar {
@@ -25,6 +25,7 @@
 
 body {
   overflow-x: hidden;
+  background-color: #000;
   
 }
 
@@ -126,6 +127,75 @@ p {
   margin-top: 1em;
 }
 
+/* @media (min-width: 768px){
+  .md\:flex {
+    display: flex;
+} */
+
+/* } */
+
+.btn {
+  border-color: transparent;
+  border-color: hsla(var(--n)/var(--tw-border-opacity,1));
+  cursor: pointer;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+  transition-duration: .15s;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  border-radius: var(--rounded-btn,.5rem);
+  height: 3rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  line-height: 2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 3rem;
+  font-weight: 600;
+  margin-left: 1em;
+  text-transform: uppercase;
+  text-transform: var(--btn-text-case,uppercase);
+  border-width: var(--border-btn,1px);
+  -webkit-animation: button-pop var(--animation-btn,.25s) ease-out;
+  animation: button-pop var(--animation-btn,.25s) ease-out;
+  --tw-bg-opacity: 1;
+  background-color: hsla(var(--n)/var(--tw-bg-opacity,1));
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 1;
+  color: hsla(var(--nc)/var(--tw-text-opacity,1));
+}
+
+ a{
+  text-decoration: inherit;
+ }
+
+.text-accent-content {
+  --tw-text-opacity: 1;
+  color: hsla(var(--ac) / var(--tw-text-opacity));
+}
+
+.to-yellow-500 {
+  --tw-gradient-to: #3586ff;
+}
+
+.from-pink-500 {
+  --tw-gradient-from: palevioletred;
+  --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to, rgba(236, 72, 153, 0));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right,var(--tw-gradient-stops));
+}
+
 .para p {
   /* display: block; */
   margin-block-start: 1em;
@@ -202,6 +272,7 @@ p {
   display: flex;
   flex-direction: row;
   margin-bottom: 3em;
+  overflow: scroll;
 }
 
 .sqaure {
@@ -269,7 +340,8 @@ p {
 footer {
   position: relative;
   width: 100%;
-  background: palevioletred;
+  background: #6c64fb
+  ;
   min-height: 100px;
   padding: 20px 50px;
   display: flex;
