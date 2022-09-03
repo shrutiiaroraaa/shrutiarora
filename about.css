@@ -25,7 +25,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: #000;
+  background-color: #333;
   
 }
 
@@ -36,7 +36,7 @@ body {
 .title-about,
 .h-title,
 p {
-  color: #f9f3ee;
+  color: #dbd9d6;
 }
 
 .h-title h3 {
@@ -276,7 +276,7 @@ p {
 }
 
 .sqaure {
-  background-color: #191b1c;
+  background-color: #333;
   width: 6.2em;
   height: 6.2em;
   border-radius: 1em;
@@ -336,83 +336,15 @@ p {
   color: #f9f3ee;
 }
 
-/* footer's styling */
-footer {
-  position: relative;
-  width: 100%;
-  background: #6c64fb
-  ;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.love{
+  height: 2em;
+  background-color: #000;
 }
 
-footer .social_icon,
-footer .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0;
-  flex-wrap: wrap;
+.love-text{
+  color: #f9f3ee;
 }
 
-footer .social_icon li,
-footer .menu li {
-  list-style: none;
-}
-
-footer .social_icon li a {
-  font-size: 2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-footer .social_icon li a:hover {
-  transform: translate(-10px);
-}
-
-footer .menu li a {
-  font-size: 1.2em;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  text-decoration: none;
-  opacity: 0.75;
-}
-
-footer .menu li a:hover {
-  opacity: 1;
-}
-
-footer p {
-  color: #fff;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 1.1em;
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.main-pic {
-  position: absolute;
-  top: 0;
-  right: 12%;
-  z-index: 1;
-}
-
-.main-pic img {
-  display: block;
-  padding-top: 100px;
-  width: 410px;
-  margin-bottom: -250px;
+.tit{
+  color: #000;
 }
